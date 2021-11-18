@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paqt.properties">
+   <children>
+      <Pane prefHeight="106.0" prefWidth="600.0" style="-fx-background-color: brown;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <Glow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <children>
+            <Text layoutX="8.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAQT " textAlignment="CENTER" wrappingWidth="158.53255081176758">
+               <font>
+                  <Font name="MV Boli" size="44.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.6111111111111112" centerY="0.5952380952380952" radius="0.5">
+                     <stops>
+                        <Stop color="#e0108d" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Text layoutX="51.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A package installer Builder" wrappingWidth="230.7838592529297">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="113.0" fitWidth="179.0" layoutX="606.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/packages_folder_badged.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ScrollPane layoutY="106.0" prefHeight="448.0" prefWidth="726.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <content>
+            <Pane prefHeight="447.0" prefWidth="727.0">
+               <children>
+                  <Button layoutX="540.0" layoutY="367.0" mnemonicParsing="false" onAction="#next_page" prefHeight="18.0" prefWidth="136.0" text="Next ">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="39.0" layoutY="367.0" mnemonicParsing="false" onAction="#back_button" prefHeight="32.0" prefWidth="136.0" text="BACK">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="17.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="18.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Properties" wrappingWidth="314.0">
+                     <font>
+                        <Font name="Gill Sans MT" size="22.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="18.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="These properties will affect output .exe" wrappingWidth="517.13671875" />
+                  <RadioButton fx:id="r1" layoutX="36.0" layoutY="128.0" mnemonicParsing="false" text="Do you wanted to give ability to create shortcut?" />
+                  <Text layoutX="36.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desktop Shortcut" wrappingWidth="314.0">
+                     <font>
+                        <Font name="Gill Sans MT" size="22.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="36.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start menu pin" wrappingWidth="314.0">
+                     <font>
+                        <Font name="Gill Sans MT" size="22.0" />
+                     </font>
+                  </Text>
+                  <RadioButton fx:id="r2" layoutX="36.0" layoutY="207.0" mnemonicParsing="false" text="Do you wanted to give ability to create entry in start menu?" />
+                  <Text layoutX="36.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taskbar pin" wrappingWidth="314.0">
+                     <font>
+                        <Font name="Gill Sans MT" size="22.0" />
+                     </font>
+                  </Text>
+                  <RadioButton fx:id="r3" layoutX="36.0" layoutY="278.0" mnemonicParsing="false" text="Do you wanted to give ability to pin at taskbar?" />
+                  <Text layoutX="36.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uninstaller mechanism" wrappingWidth="314.0">
+                     <font>
+                        <Font name="Gill Sans MT" size="22.0" />
+                     </font>
+                  </Text>
+                  <RadioButton fx:id="r4" layoutX="36.0" layoutY="338.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="291.0" text="Do you wanted to give ability to uninstall." />
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paqt.ending_config_con">
+   <children>
+      <Pane prefHeight="106.0" prefWidth="600.0" style="-fx-background-color: brown;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <Glow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <children>
+            <Text layoutX="8.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAQT " textAlignment="CENTER" wrappingWidth="158.53255081176758">
+               <font>
+                  <Font name="MV Boli" size="44.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.6111111111111112" centerY="0.5952380952380952" radius="0.5">
+                     <stops>
+                        <Stop color="#e0108d" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Text layoutX="51.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A package installer Builder" wrappingWidth="230.7838592529297">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="113.0" fitWidth="179.0" layoutX="606.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/packages_folder_badged.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ScrollPane layoutY="106.0" prefHeight="448.0" prefWidth="726.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <content>
+            <Pane prefHeight="447.0" prefWidth="727.0">
+               <children>
+                  <Button layoutX="13.0" layoutY="390.0" mnemonicParsing="false" onAction="#back_button" prefHeight="32.0" prefWidth="136.0" text="BACK">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="17.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="file_path" layoutX="15.0" layoutY="103.0" prefHeight="25.0" prefWidth="491.0" />
+                  <Button layoutX="556.0" layoutY="101.0" mnemonicParsing="false" onAction="#file_dir_chooser" prefHeight="30.0" prefWidth="124.0" text="Browse" />
+                  <Text layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose the output folder" wrappingWidth="314.0">
+                     <font>
+                        <Font name="Gill Sans MT" size="22.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose where you wanted to get your output" wrappingWidth="517.13671875" />
+                  <Text layoutX="18.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose icon" wrappingWidth="314.0">
+                     <font>
+                        <Font name="Gill Sans MT" size="22.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="icon_path" layoutX="13.0" layoutY="226.0" prefHeight="25.0" prefWidth="496.0" />
+                  <Button layoutX="562.0" layoutY="224.0" mnemonicParsing="false" onAction="#png_choose" prefHeight="30.0" prefWidth="124.0" text="Choose icon" />
+                  <Text layoutX="18.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your installer's icon (it should be .ico)" wrappingWidth="517.13671875" />
+                  <Text layoutX="14.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="314.0">
+                     <font>
+                        <Font name="Gill Sans MT" size="22.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="556.0" layoutY="390.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="32.0" prefWidth="136.0" text="Build now">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="17.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="18.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose header/side bar image" wrappingWidth="314.0">
+                     <font>
+                        <Font name="Gill Sans MT" size="22.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="18.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose sidebar image (it should be .bmp) note:- make sure .bmp should be valid" wrappingWidth="517.13671875" />
+                  <TextField fx:id="bmp_path" layoutX="13.0" layoutY="332.0" prefHeight="25.0" prefWidth="496.0" />
+                  <Button layoutX="562.0" layoutY="330.0" mnemonicParsing="false" onAction="#bmp_choose" prefHeight="30.0" prefWidth="124.0" text="Choose bitmap" />
+                  <RadioButton fx:id="watermark" layoutX="233.0" layoutY="373.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="167.0" text="put paqt branding" />
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

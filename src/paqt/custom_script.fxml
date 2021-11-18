@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paqt.custom_script">
+   <children>
+      <Pane prefHeight="106.0" prefWidth="600.0" style="-fx-background-color: brown;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <Glow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <children>
+            <Text layoutX="8.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAQT " textAlignment="CENTER" wrappingWidth="158.53255081176758">
+               <font>
+                  <Font name="MV Boli" size="44.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.6111111111111112" centerY="0.5952380952380952" radius="0.5">
+                     <stops>
+                        <Stop color="#e0108d" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Text layoutX="51.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A package installer Builder" wrappingWidth="230.7838592529297">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="113.0" fitWidth="179.0" layoutX="606.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/packages_folder_badged.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ScrollPane layoutY="106.0" prefHeight="448.0" prefWidth="726.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <content>
+            <Pane prefHeight="447.0" prefWidth="727.0">
+               <children>
+                  <Button layoutX="570.0" layoutY="393.0" mnemonicParsing="false" onAction="#next_page" prefHeight="18.0" prefWidth="136.0" text="Next ">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="393.0" mnemonicParsing="false" onAction="#back_button" prefHeight="32.0" prefWidth="136.0" text="BACK">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="17.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="18.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Custom operations" wrappingWidth="314.0">
+                     <font>
+                        <Font name="Gill Sans MT" size="22.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="20.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your script to perform any custom actions such as any hardware or specific compatibility check using batch script." wrappingWidth="671.13671875" />
+                  <TextArea fx:id="editor" layoutX="6.0" layoutY="91.0" prefHeight="294.0" prefWidth="700.0" promptText="What ever action you wanted to perform, write here. if you donot wanted to perform any action write &quot;&quot; ">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextArea>
+                  <Button layoutX="291.0" layoutY="388.0" mnemonicParsing="false" onAction="#run_attempt_cmd" prefHeight="43.0" prefWidth="164.0" style="-fx-background-color: black;" text="Run" textFill="#fcf9f9">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/running.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

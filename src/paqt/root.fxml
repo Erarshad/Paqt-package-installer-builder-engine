@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paqt.dash_1">
+   <children>
+      <Pane prefHeight="106.0" prefWidth="600.0" style="-fx-background-color: brown;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <Glow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <children>
+            <Text layoutX="8.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAQT " textAlignment="CENTER" wrappingWidth="158.53255081176758">
+               <font>
+                  <Font name="MV Boli" size="44.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.6111111111111112" centerY="0.5952380952380952" radius="0.5">
+                     <stops>
+                        <Stop color="#e0108d" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Text layoutX="51.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A package installer Builder" wrappingWidth="230.7838592529297">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="113.0" fitWidth="179.0" layoutX="606.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/packages_folder_badged.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ScrollPane layoutY="106.0" prefHeight="448.0" prefWidth="726.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <content>
+            <Pane prefHeight="447.0" prefWidth="727.0">
+               <children>
+                  <HBox prefHeight="24.0" prefWidth="716.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="About your package" textAlignment="CENTER" wrappingWidth="292.9830722808838">
+                           <font>
+                              <Font name="Copperplate Gothic Light" size="15.0" />
+                           </font></Text>
+                        <Text fill="#b02c2c" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title will appear on the top of installer window" textAlignment="CENTER" wrappingWidth="417.9830722808838">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="2.0" layoutY="35.0" prefHeight="34.0" prefWidth="720.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Package title" textAlignment="CENTER" wrappingWidth="120.98307228088379">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="title" prefHeight="26.0" prefWidth="592.0" style="-fx-border-radius: 20; -fx-background-color: transparent; -fx-border-style: dotted  dashed  dashed  dashed;" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="2.0" layoutY="91.0" prefHeight="24.0" prefWidth="714.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Company information" textAlignment="CENTER" wrappingWidth="292.9830722808838">
+                           <font>
+                              <Font name="Copperplate Gothic Light" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#b02c2c" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="company information will be embdded into contact section" textAlignment="CENTER" wrappingWidth="417.9830722808838">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="6.0" layoutY="142.0" prefHeight="24.0" prefWidth="716.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Author/Company name" textAlignment="CENTER" wrappingWidth="173.9830722808838">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="author" prefHeight="68.0" prefWidth="592.0" style="-fx-border-radius: 20; -fx-background-color: transparent; -fx-border-style: dotted  dashed  dashed  dashed;" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="7.0" layoutY="198.0" prefHeight="26.0" prefWidth="711.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="contact email address" textAlignment="CENTER" wrappingWidth="173.9830722808838">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="email" prefHeight="68.0" prefWidth="592.0" style="-fx-border-radius: 20; -fx-background-color: transparent; -fx-border-style: dotted  dashed  dashed  dashed;" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="-1.0" layoutY="252.0" prefHeight="29.0" prefWidth="726.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="company website" textAlignment="CENTER" wrappingWidth="180.9830722808838">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="website" prefHeight="68.0" prefWidth="592.0" style="-fx-border-radius: 20; -fx-background-color: transparent; -fx-border-style: dotted  dashed  dashed  dashed;" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="14.0" layoutY="305.0" prefHeight="29.0" prefWidth="703.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Legal Copyright" textAlignment="CENTER" wrappingWidth="163.9830722808838">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="copyright" prefHeight="68.0" prefWidth="592.0" style="-fx-border-radius: 20; -fx-background-color: transparent; -fx-border-style: dotted  dashed  dashed  dashed;" />
+                     </children>
+                  </HBox>
+                  <Button layoutX="540.0" layoutY="367.0" mnemonicParsing="false" onAction="#handle_next_button" prefHeight="32.0" prefWidth="136.0" text="Next ">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="17.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="14.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Version" textAlignment="CENTER" wrappingWidth="163.9830722808838">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="version" layoutX="134.0" layoutY="373.0" prefHeight="25.0" prefWidth="370.0" style="-fx-border-radius: 20; -fx-background-color: transparent; -fx-border-style: dotted  dashed  dashed  dashed;" />
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
