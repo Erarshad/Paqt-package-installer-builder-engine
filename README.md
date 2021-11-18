@@ -1,4 +1,4 @@
-** PAQT INSTALLER BUILDER ENGINE IS JAVAFX APPLICATION **
+**PAQT INSTALLER BUILDER ENGINE IS JAVAFX APPLICATION**
 <br>
 *It will generate installer for you with out writing code*
 <br>
