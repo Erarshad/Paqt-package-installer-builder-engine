@@ -1,6 +1,9 @@
-** **PAQT INSTALLER BUILDER ENGINE IS JAVAFX APPLICATION** **
+** PAQT INSTALLER BUILDER ENGINE IS JAVAFX APPLICATION **
+<br>
 *It will generate installer for you with out writing code*
+<br>
 `all the pull requests are welcome`
+<br>
 
 # > what you need**
 1. javafx sdk
@@ -9,6 +12,8 @@
 4. jdbc.jar
 5. clone the repo and import in intellij
 6. run the main function
+
+<br>
 
 
 
